@@ -1,0 +1,17 @@
+
+.block-1{
+    height: 50vh;
+    background: green;
+}
+
+.block-2{
+    height: 200vh;
+    background: pink;
+}
+
+.yolo{
+    background: yellow;
+    position: sticky;
+    top: 0px;
+    
+}

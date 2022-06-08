@@ -1,0 +1,31 @@
+body{
+    background-color: pink;
+}
+
+.blue-text {
+    background: green;
+    width: 200px;
+}
+
+.span1{
+    background: yellow;
+    
+}
+
+.test{
+    display: inline;
+}
+
+.circle {
+    background: blue;;
+    }
+
+.red{  
+    background: red;
+}
+
+.green{
+    background: green;
+
+}
+

@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#grid {
+    display: grid;
+    background: yellow;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 100vh;
+}
+
+div {
+    background: black;
+    color: white;
+    grid-row : 2/ span 2;
+    grid-column: 1 / span 3;
+}
+
+h3{
+    background : green;
+    grid-row: 1/ span 4;
+    grid-column: 4;
+}
+
+h2{
+    background-color: red;
+    grid-row: 4;
+    grid-column: 2;
+}
+h1{
+    background-color: blue;
+    grid-column: 1/ span 3;
+}
+
+h4{
+    background-color: pink;
+    grid-row: 4;
+}

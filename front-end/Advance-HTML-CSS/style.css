@@ -1,0 +1,16 @@
+ div p { /* specifity 1 + 1*/
+    color: red;
+}
+p{
+    color: red;
+}
+p {
+    color: blue;
+}
+
+#p-tag{
+    color: green;
+}
+.the-div p {
+    color: yellow;
+}

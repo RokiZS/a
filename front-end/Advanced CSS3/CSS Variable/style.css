@@ -1,0 +1,61 @@
+html{
+    /* --bgcolor :green; */
+    --bgdiv : yellow;
+    --divpadding : 20px;
+    --divborder :3px solid black;
+    --standart-font-size : 20px;
+    --h1-font-size : calc(var(--standart-font-size) * 2);
+    --p-font-size: calc(var(--standart-font-size) / 2)
+}
+body {
+
+    font-size: var(--standart-font-size);
+    background: var(--bgcolor,yellow);
+}
+
+.normaldiv{
+    
+    background: var(--bgdiv);
+    padding: var(--divpadding);
+    border: var(--divborder);
+}
+
+h1{
+    font-size: 30px;
+}
+ul li:nth-child(5n+3){
+    background: black;
+    color: white;
+    cursor: pointer;
+    
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+li:hover{
+    color: blue;
+    background:green ;
+    list-style-type: none;
+
+}
+#banner{
+    color: purple;
+    background-color: white;
+}
+#banner:hover::before{
+    text-transform:lowercase;
+}
+#banner::before{
+    content: attr(data-mytext);
+    display: block;
+    width: 200px;
+    height: 200px;
+    background: red;
+}
+
+
+h1~p{
+    color: blue;
+}

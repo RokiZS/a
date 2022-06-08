@@ -1,0 +1,113 @@
+*{
+    margin : 0;
+}
+
+body {
+    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+    background: rgb(48, 44, 44);
+}
+nav,footer {
+    flex-shrink: 0;
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    padding: 10px;
+    margin: 2px;
+    list-style: none;
+}
+section{
+    margin-bottom: 30%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+section span{
+    position: fixed;
+    background-color: blue;
+    top: 0%;
+    left: 0%;
+}
+
+#logo {
+   background-color: red;
+  
+
+}
+
+.search-container {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+    display: flex;
+}
+
+.search-bar{
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 10px;
+  }
+
+
+/* CSS */
+.under-button {
+  background-color: gray(51, 51, 51, 0.05);
+  border: 3px solid #00B4CC;
+  border-radius: 10px;
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  margin-left: 10px;
+  padding: 10px 60px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.layer{
+    padding: 10px 5px;
+    border-bottom: solid gray;
+    background-color: rgb(191, 188, 188);
+    width: 100%;
+
+}

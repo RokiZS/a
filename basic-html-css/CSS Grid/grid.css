@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+ 
+  #grid {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      grid-template-columns: 1fr  1fr  1fr;
+      grid-template-rows: 200px 200px 200px;
+      grid-template-areas: 
+      "header  header  header"
+      "main sidebar ad"
+      "footer  footer  footer" 
+      
+  }
+  
+  @media screen and (max-width:500px){
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "sidebar"
+        "footer"
+    }
+      
+  }
+
+  main {
+      background-color: green;
+      grid-area: main;
+      
+      font-size: 21px;
+  }
+
+  aside{
+      background :black;
+      color: white;
+      grid-area: sidebar;
+      
+      font-size: 21px
+  }
+  header {
+      background : yellow;
+      grid-area: header;
+      
+      font-size: 21px
+  }
+  footer {
+      background :blue;
+      color : white;
+      grid-area: footer;
+      
+      font-size: 21px
+  }
+  
+  div{
+      background:red;
+      grid-area: ad;
+  }

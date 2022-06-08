@@ -1,0 +1,54 @@
+<html>
+    <style>
+    table,thead,tbody,tr,th,td{
+        border: 1px solid black
+    }    
+    </style>
+<body>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <th>Head 1</th>
+                <th>Head 2</th>
+                <th>Head 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ccol1</td>
+                <td>C Ol2</td>
+                <td>col3</td>
+            </tr>
+            <tr>
+                <td>Ccol1</td>
+                <td>COl2</td>
+                <td>col3</td>
+            </tr>
+            <tr>
+                <td>Ccol1</td>
+                <td>COl2</td>
+                <td>col3</td>
+            </tr>
+        </tbody>
+    </table>
+    <!--http://127.0.0.1:5500/submit?your-email=tst%40gmail.com-->
+    <form action="/submit" method="get">
+        <div>
+            Name
+            <br>
+            <input type="text" name="user-name">
+        </div>
+        <div>
+            Email
+            <br>
+            <input type="email" name="your-email" required><br><br>
+        </div>
+        <input type="submit">
+        
+        
+    </form>
+    
+</body>
+</html>

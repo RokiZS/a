@@ -1,0 +1,25 @@
+body {
+  padding: 10px;
+  margin: 0;  
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+#grid {
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-rows: repeat(3, 110px);
+}
+
+#grid div:nth-child(2n) {
+    background: red;
+    width: 100px;
+    height: 100px;
+}
+
+#grid div:nth-child(2n+1) {
+    background: blue;
+    width: 100px;
+    height: 100px;
+}

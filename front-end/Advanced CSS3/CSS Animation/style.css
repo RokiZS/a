@@ -1,0 +1,26 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background: pink;
+    position: absolute;
+    top: 0px;
+    animation: toggleColors 1500ms cubic-bezier(0, 0.78, 1, 0.21) forwards;
+}
+
+@keyframes toggleColors{
+    0%{
+        background:blue;
+        top: 0px;
+    }
+    25%{
+        background-color: green;
+    }
+    50%{
+        background: yellow;
+        top: 100px;
+    }
+    100%{
+         background: blue;
+         top: 0px;
+    }
+}
